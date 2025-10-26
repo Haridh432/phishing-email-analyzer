@@ -1,0 +1,27 @@
+Subject: Important - Action required
+From: Example Sender <spoof@example.com>
+To: victim@local.test
+Return-Path: 
+DKIM header present: True
+Envelope-from domain: example.com
+
+Extracted URLs:
+  http://198.51.100.45/malware
+
+Extracted domains:
+  198.51.100.45.
+  example.com
+
+SPF records (if any):
+198.51.100.45.: []
+example.com: ['v=spf1 -all']
+
+DMARC records (if any):
+198.51.100.45.: []
+example.com: ['v=DMARC1;p=reject;sp=reject;adkim=s;aspf=s']
+
+Score: 3.5
+Reasons:
+ - No SPF for 198.51.100.45.
+ - No DMARC for 198.51.100.45.
+ - URL uses IP address: http://198.51.100.45/malware

@@ -1,0 +1,34 @@
+{
+  "file": "suspect.eml",
+  "subject": "Important - Action required",
+  "from": "Example Sender <spoof@example.com>",
+  "to": "victim@local.test",
+  "return_path": "",
+  "envelope_domain": "example.com",
+  "dkim_present": true,
+  "urls": [
+    "http://198.51.100.45/malware"
+  ],
+  "domains": [
+    "198.51.100.45.",
+    "example.com"
+  ],
+  "spf": {
+    "198.51.100.45.": [],
+    "example.com": [
+      "v=spf1 -all"
+    ]
+  },
+  "dmarc": {
+    "198.51.100.45.": [],
+    "example.com": [
+      "v=DMARC1;p=reject;sp=reject;adkim=s;aspf=s"
+    ]
+  },
+  "score": 3.5,
+  "reasons": [
+    "No SPF for 198.51.100.45.",
+    "No DMARC for 198.51.100.45.",
+    "URL uses IP address: http://198.51.100.45/malware"
+  ]
+}

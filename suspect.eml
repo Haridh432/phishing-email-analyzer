@@ -1,0 +1,10 @@
+From: "Example Sender" <spoof@example.com>
+To: victim@local.test
+Subject: Important - Action required
+Date: Thu, 23 Oct 2025 10:00:00 +0000
+DKIM-Signature: v=1; a=rsa-sha256; d=example.com; s=default;
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Please click <a href="http://198.51.100.45/malware">here</a> to update your account.</p>
+</body></html>
