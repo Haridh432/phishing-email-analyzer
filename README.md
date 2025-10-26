@@ -16,7 +16,7 @@ It extracts URLs, domains, checks SPF/DKIM/DMARC presence, and produces readable
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/<your-username>/Phishing-Email-Analyzer.git
+git clone https://github.com/Haridh432/Phishing-Email-Analyzer.git
 cd Phishing-Email-Analyzer
 python3 -m venv .venv
 source .venv/bin/activate
